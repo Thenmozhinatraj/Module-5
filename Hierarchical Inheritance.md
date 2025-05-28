@@ -29,6 +29,7 @@ To write a Python program to get the employee and doctor details and display the
 ### PROGRAM
 ```python
 # hierarchical inheritance
+# hierarchical inheritance
 
 class Details:
     def __init__(self):
@@ -89,11 +90,13 @@ print("\nDoctor Object")
 d = Doctor()
 d.setEmployee(id1, nam, gen, hosp, dep)
 d.showEmployee()
+      
 ```
 
 ### OUTPUT  
 
-![image](https://github.com/user-attachments/assets/2c007c30-c149-415f-b9d2-fea1b333a023) 
+![image](https://github.com/user-attachments/assets/b820e379-7893-49ad-b2c7-9a2642ec2440)
+ 
 
 ### RESULT
 Thus, a Python program to get the employee and doctor details and display them using hierarchical inheritance are verified.
