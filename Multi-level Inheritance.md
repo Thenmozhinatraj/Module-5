@@ -39,34 +39,39 @@ To write a Python program to get the name, age, and ID of a person and display t
 ### PROGRAM
 
 ```python
-class Parent:
-   def __init__(self,name):
-     self.name = name
-   def getName(self):
-     return self.name
-class Child(Parent):
-   def __init__(self,name,age):
-     Parent.__init__(self,name)
-     self.age = age
-   def getAge(self):
-     return self.age
-class Grandchild(Child):
-   def __init__(self,name,age,location):
-     Child.__init__(self,name,age)
-     self.location=location
-   def getLocation(self):
-     return self.location
-name=input()
-age=int(input())
-loc=input()
-gc = Grandchild(name,age,loc)
-print(gc.getName(), gc.getAge(), gc.getLocation())
+class Student:
+    def __init__(self, name, student_id):
+        self.name = name
+        self.student_id = student_id
 
+    def get_student_info(self):
+        return f"Name: {self.name}, ID: {self.student_id}"
 
+class Attendance(Student):
+    def __init__(self, name, student_id, attendance):
+        super().__init__(name, student_id)
+        self.attendance = attendance
+
+    def check_eligibility(self):
+        if self.attendance > 80:
+            return f"{self.get_student_info()} is Eligible for Module Exam."
+        else:
+            return f"{self.get_student_info()} is Not Eligible for Module Exam."
+
+# Taking inputs
+name = input()
+student_id = int(input())
+attendance = int(input())
+
+# Creating object
+student = Attendance(name, student_id, attendance)
+
+# Checking eligibility
+print(student.check_eligibility())
 
 ```
 ### OUTPUT
-![image](https://github.com/user-attachments/assets/d473612c-cfe1-4b8c-a207-3a535cd4b1e1)
+![image](https://github.com/user-attachments/assets/532adc2d-7c22-4651-b670-372039c4fa66)
 
 
 
