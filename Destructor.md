@@ -22,23 +22,28 @@ To create a Python class `Student` with a destructor.
 ### PROGRAM
 
 ```python
-class student:
-    def __init__(self):
-        print("Constructor is called. Student object is created.")
+class Student:
+	def __init__(self, name, age):
+		self.name = name
+		self.age = age
 
-    def __del__(self):
-        print("Destructor is called. Student object is deleted.")
+	def printDetail(self):
+		print(f"My name is {self.name} and I am {self.age} years old.")
 
-# Creating object
-s2 = student()
+	#add destructor
+	def dels(self):
+	    print(f"{self.name} student is deleted.")
 
-# Deleting object
-del s2
+
+s1 = Student("Vishvajit Rao", 22)
+s1.printDetail()
+s1.dels()
 ```
 
 ### OUTPUT
 
-![Screenshot 2025-05-02 124125](https://github.com/user-attachments/assets/8543c576-be26-4249-b378-3aa6269f37a6)
+![image](https://github.com/user-attachments/assets/5201ba56-2775-4d2f-a92f-0391fdd338a7)
+
 
 ### RESULT
 Thus, the program executed successfully and the output is verified.
