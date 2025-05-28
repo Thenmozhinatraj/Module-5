@@ -24,20 +24,22 @@ To write a Python code to create a class for a person with a parameterized const
 ### PROGRAM
 
 ```python
-class person:
-    def __init__(self, name, userid):
-        self.name = name
-        self.userid = userid
-        print("User ID is:", self.userid)
-
-name = input("Enter your name: ")
-userid = input("Enter your userid: ")
-
-s1 = person(name, userid)
+class employees:
+    def __init__(self,a,b):
+        self.a=a
+        self.b=b
+    def dis(self):
+        print("Hello my id is :",a)
+        print("My name is :",b)
+a=int(input())
+b=input()
+obj=employees(a,b)
+obj.dis()
 ```
 
 ### OUTPUT
-![Screenshot 2025-05-02 123814](https://github.com/user-attachments/assets/138efd9e-f814-4f0d-95db-4d19a9860799)
+![image](https://github.com/user-attachments/assets/b09ba389-67cd-428a-b7ac-acb753d0c5d8)
+
 
 ### RESULT
 Thus, the program executed successfully and the output is verified.
