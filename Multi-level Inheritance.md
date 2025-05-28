@@ -61,9 +61,11 @@ age=int(input())
 loc=input()
 gc = Grandchild(name,age,loc)
 print(gc.getName(), gc.getAge(), gc.getLocation())
+
 ```
 ### OUTPUT
-![Screenshot 2025-05-02 132428](https://github.com/user-attachments/assets/eeba1043-1201-450b-8475-16cb0cc4bf9b)
+![image](https://github.com/user-attachments/assets/0b795895-1912-4d6a-864f-fbd813740cb6)
+
 
 ### RESULT
 Thus,a Python program to get the name, age, and location of a person and display them using multilevel inheritance are verified.
